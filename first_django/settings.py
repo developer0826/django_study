@@ -75,6 +75,7 @@ WSGI_APPLICATION = 'first_django.wsgi.application'
 
 DATABASES = {
     'default': {
+        'ENGINE': 'django.db.backends.mysql',
         'OPTIONS': {
             'read_default_file': str(BASE_DIR / 'mysql.cnf')
         }
